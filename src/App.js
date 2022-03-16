@@ -1,32 +1,35 @@
-import "./App.css"
+import "./App.css";
+import Student from "./components/Student";
 
 function App() {
-  const studentStyles = {
-    boxShadow: "0 0 10px black",
-    padding: "10px",
-    margin: "10px",
-  };
-  return (
-    <div className="App">
-     <div style={studentStyles}>
-       <h2>John Doe</h2>
-       <div>Score: 4.5/5</div>
-       <div>Homework: 4/5</div>
-     </div>
-    
-       <div style={studentStyles} >
-       <h2>Elon Mask</h2>
-       <div>Score: 3/5</div>
-       <div>Homework: 5/5</div>
-     </div>
-    
-    <div style={studentStyles}>
-    <h2>Donald Trump</h2>
-    <div>Score: 2/5</div>
-    <div>Homework: 1/5</div>
+const students = [
+   {name: "John Doe", score:4.5, homework: 4},
+   {name: "Elon Mask", score: 3, homework: 5},
+   {name: "Donald Trump", score: 2, homework: 1},
+   {name: "Madonna", score: 4, homework: 4},
+   {name: "Michael Jackson", score: 2, homework: 4},
+];
+const output = students.map(student => {
+  return <Student name={student.name}
+    score={student.score}
+    homework={student.homework}/>
+});
+
+
+return (
+  <div className="App">
+    {output}
+
+
   </div>
-  </div>
-  );
+);
 }
 
+
 export default App;
+
+
+
+
+
+
