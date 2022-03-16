@@ -1,5 +1,6 @@
 import "./App.css";
 import Student from "./components/Student";
+import Link from "./components/Link";
 
 function App() {
 const students = [
@@ -10,9 +11,14 @@ const students = [
    {name: "Michael Jackson", score: 2, homework: 4},
 ];
 const output = students.map(student => {
-  return <Student name={student.name}
+  return (
+   <Student 
+   name={student.name}
     score={student.score}
-    homework={student.homework}/>
+    homework={student.homework} >
+      {student.notes}
+    </Student>
+  );
 });
 
 
@@ -20,6 +26,7 @@ return (
   <div className="App">
     {output}
 
+    <Link to="https://google.com">Google</Link>
 
   </div>
 );
