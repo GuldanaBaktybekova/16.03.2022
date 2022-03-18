@@ -1,8 +1,7 @@
 import "./App.css";
 // import Student from "./components/Student";
 // import Link from "./components/Link";
-import Article from "./components/Article"
-
+import Article from "./components/Article";
 
 // function App() {
 // const students = [
@@ -14,7 +13,7 @@ import Article from "./components/Article"
 // ];
 // const output = students.map(student => {
 //   return (
-//    <Student 
+//    <Student
 //    name={student.name}
 //     score={student.score}
 //     homework={student.homework} >
@@ -22,7 +21,6 @@ import Article from "./components/Article"
 //     </Student>
 //   );
 // });
-
 
 // return (
 //   <div className="App">
@@ -34,22 +32,36 @@ import Article from "./components/Article"
 // );
 // }
 
-
-
-
-
-
-
 function App() {
-  return (
-    <div className='App'>  
-     <Image src="https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612" />
-    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.
+  const articles = [
+    {
+      img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
+      title: "Dog",
+      note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
+    },
+    {
+      img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
+      title: "Dog",
+      note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
+    },
+    {
+      img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
+      title: "Dog",
+      note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
+    },
+  ];
+  const output = articles.map((article) => {
+    return (
+      <Article
+        img={article.img}
+        title={article.title}
+     
+        note={article.note}
+      ></Article>
+    );
+  });
 
-    </Text>
-    </div>
- 
-  );
+  return <div className="App">{output}</div>;
 }
 
 export default App;
