@@ -1,9 +1,12 @@
 function Article(props) {
+
   return (
     <div>
-      <img src={props.src} />
-      <h1>{props.children}</h1>
-    </div>
+       <img src={props.img}/>
+       <h1> {props.title}</h1>
+       
+       <p>{props.note}</p>
+     </div>
   );
 }
 
