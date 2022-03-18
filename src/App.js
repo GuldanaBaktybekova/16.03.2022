@@ -1,7 +1,8 @@
 import "./App.css";
 // import Student from "./components/Student";
-// import Link from "./components/Link";
-import Article from "./components/Article";
+// // import Link from "./components/Link";
+// import Article from "./components/Article";
+import Text from "./components/Text"
 
 // function App() {
 // const students = [
@@ -32,36 +33,57 @@ import Article from "./components/Article";
 // );
 // }
 
-function App() {
-  const articles = [
-    {
-      img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
-      title: "Dog",
-      note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
-    },
-    {
-      img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
-      title: "Dog",
-      note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
-    },
-    {
-      img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
-      title: "Dog",
-      note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
-    },
-  ];
-  const output = articles.map((article) => {
-    return (
-      <Article
-        img={article.img}
-        title={article.title}
+// function App() {
+//   const articles = [
+//     {
+//       img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
+//       title: "Dog",
+//       note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
+//     },
+//     {
+//       img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
+//       title: "Dog",
+//       note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
+//     },
+//     {
+//       img: "https://media.istockphoto.com/photos/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-picture-id1069531070?s=612x612",
+//       title: "Dog",
+//       note: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec ornare leo. Sed vel felis sed lorem facilisis tincidunt. Nullam commodo lectus non turpis posuere, id euismod enim hendrerit. Sed bibendum, tellus ut volutpat sollicitudin, turpis ante rhoncus or.",
+//     },
+//   ];
+//   const output = articles.map((article) => {
+//     return (
+//       <Article
+//         img={article.img}
+//         title={article.title}
      
-        note={article.note}
-      ></Article>
-    );
-  });
+//         note={article.note}
+//       ></Article>
+//     );
+//   });
 
-  return <div className="App">{output}</div>;
+//   return <div className="App">{output}</div>;
+// }
+
+
+
+
+
+
+
+function App() {
+
+
+    
+
+  return <div className="App">
+    
+    <Text
+       h1="Guldana" 
+
+      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </Text>
+  </div>;
 }
 
 export default App;
