@@ -1,8 +1,16 @@
 function Link(props) {
+
+  const links = props.output;
+  let lis = links.forEach(link => {
+    <li><a href={link.href}>{link.title}</a></li>
+  });
+
   return (
-   <a href={props.to}>{props.children}</a>
+   <ul>{lis}</ul>
   );
   }
 
 
 export default Link;
+
+

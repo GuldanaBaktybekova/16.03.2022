@@ -1,8 +1,8 @@
 import "./App.css";
 // import Student from "./components/Student";
-// // import Link from "./components/Link";
+import Link from "./components/Link";
 // import Article from "./components/Article";
-import Text from "./components/Text"
+import Text from "./components/Text";
 
 // function App() {
 // const students = [
@@ -56,7 +56,7 @@ import Text from "./components/Text"
 //       <Article
 //         img={article.img}
 //         title={article.title}
-     
+
 //         note={article.note}
 //       ></Article>
 //     );
@@ -65,25 +65,39 @@ import Text from "./components/Text"
 //   return <div className="App">{output}</div>;
 // }
 
-
-
+// function App() {
+//   return (
+//     <div className="App">
+//       <Text h1="Guldana">
+//         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//       </Text>
+//     </div>
+//   );
+// }
 
 
 
 
 function App() {
+  const links = [
+    {title: "World", href: "https://google.com" },
+    {title: "World", href: "https://google.com" },
+    {title: "World", href: "https://google.com" },
+    {title: "World", href: "https://google.com" },
+    {title: "World", href: "https://google.com" },
+   
+ ];
+
+return (
+      <div className="App">
+        <Link output={links}></Link>
+      </div>
+    );
 
 
-    
 
-  return <div className="App">
-    
-    <Text
-       h1="Guldana" 
 
-      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </Text>
-  </div>;
 }
+
 
 export default App;
