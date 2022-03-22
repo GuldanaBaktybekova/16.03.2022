@@ -1,6 +1,6 @@
 function Button(props) {
   return (
-    <div>Click on the button{props.button} </div>
+    <div>{props.button} </div>
   );
 }
 export default Button;
