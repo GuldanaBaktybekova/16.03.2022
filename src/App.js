@@ -1,8 +1,12 @@
 import "./App.css";
 // import Student from "./components/Student";
-import Link from "./components/Link";
+// import Link from "./components/Link";
 // import Article from "./components/Article";
-import Text from "./components/Text";
+// import Text from "./components/Text";
+
+// import Country from './components/Country';
+
+import Button from './components/Button';
 
 // function App() {
 // const students = [
@@ -98,14 +102,25 @@ import Text from "./components/Text";
 
 
 // }
-import Country from './components/Country';
+// function App() {
+//   return (
+//     <div className='App'>
+//       <Country country="Kyrgyzstan" />
+    
+//     </div>
+//   );
+// }
+
+
 function App() {
+ 
   return (
     <div className='App'>
-      <Country country="Kyrgyzstan" />
+      <Button button="stop"/>
     
     </div>
   );
 }
+
 
 export default App;
