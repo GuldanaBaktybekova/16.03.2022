@@ -78,26 +78,34 @@ import Text from "./components/Text";
 
 
 
-function App() {
-  const links = [
-    {title: "World", href: "https://google.com" },
-    {title: "World", href: "https://google.com" },
-    {title: "World", href: "https://google.com" },
-    {title: "World", href: "https://google.com" },
-    {title: "World", href: "https://google.com" },
+// function App() {
+//   const links = [
+//     {title: "World", href: "https://google.com" },
+//     {title: "World", href: "https://google.com" },
+//     {title: "World", href: "https://google.com" },
+//     {title: "World", href: "https://google.com" },
+//     {title: "World", href: "https://google.com" },
    
- ];
+//  ];
 
-return (
-      <div className="App">
-        <Link output={links}></Link>
-      </div>
-    );
-
-
+// return (
+//       <div className="App">
+//         <Link output={links}></Link>
+//       </div>
+//     );
 
 
+
+
+// }
+import Country from './components/Country';
+function App() {
+  return (
+    <div className='App'>
+      <Country country="Kyrgyzstan" />
+    
+    </div>
+  );
 }
-
 
 export default App;
