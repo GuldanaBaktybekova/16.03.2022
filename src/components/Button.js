@@ -1,7 +1,6 @@
 function Button(props) {
   return (
-    <div>I am from {props.country} </div>
+    <div>Click on the button{props.button} </div>
   );
 }
-
 export default Button;
